@@ -37,8 +37,6 @@ Product.init(
         key: 'id',
       },
     },
-
-    // define columns
   },
   {
     sequelize,
