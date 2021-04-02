@@ -22,21 +22,21 @@ Product.init(
     price: {
       type: DataTypes.DECIMAL(10, 2),
       allowNull: false,
-      CHECK (defaultValue = DECIMAL(10, 2))
+      // CHECK (type = DECIMAL(10, 2))
     },
     stock: {
       type: DataTypes.INTEGER,
       allowNull: false,
       defaultValue: 10,
-      CHECK (defaultValue = INTEGER)
+      // CHECK (type = INTEGER)
     },
-    category_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: 'Category',
-        key: 'id',
-      },
-    },
+    // category_id: {
+    //   type: DataTypes.INTEGER,
+    //   references: {
+    //     model: 'Category',
+    //     key: 'id',
+    //   },
+    // },
   },
   {
     sequelize,
