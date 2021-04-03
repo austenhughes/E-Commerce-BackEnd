@@ -43,17 +43,17 @@ router.post('/', async (req, res) => {
   }
 });
 
-  // update a category by its `id` value
+// update a category by its `id` value
 
 // router.put('/:id', (req, res) => {
-//   // update product data
+//   // update category data
 //   Category.update(req.body, {
 //     where: {
 //       id: req.params.id,
 //     },
 //   })
 //     .then((category) => {
-//       // find all associated tags from ProductTag
+//       // find all associated tags from categoryTag
 //       return Category.findAll({ where: { category_id: req.params.id } });
 //     })
 //     .then((categoryTags) => {
@@ -69,14 +69,14 @@ router.post('/', async (req, res) => {
 //           };
 //         });
 //       // figure out which ones to remove
-//       const categoryToRemove = product
+//       const categoryToRemove = categoryTags
 //         .filter(({ tag_id }) => !req.body.tagIds.includes(tag_id))
 //         .map(({ id }) => id);
 
 //       // run both actions
 //       return Promise.all([
-//         ProductTag.destroy({ where: { id: categoryToRemove } }),
-//         ProductTag.bulkCreate(newProduct),
+//         Category.destroy({ where: { id: categoryToRemove } }),
+//         Category.bulkCreate(newCategoryTags),
 //       ]);
 //     })
 //     .then((updatedCategory) => res.json(updatedCategory))
@@ -85,7 +85,6 @@ router.post('/', async (req, res) => {
 //       res.status(400).json(err);
 //     });
 // });
-
 
 // delete a category by its `id` value
 router.delete('/:id', async (req, res) => {
