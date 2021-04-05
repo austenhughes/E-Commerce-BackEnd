@@ -29,6 +29,8 @@ insomnia : https://insomnia.rest/download
 
 ## video of use :
 
+https://drive.google.com/file/d/1zdhOHtlrTnrPbFk005NvKZDgcjh_oh1l/view?usp=sharing
+
 ## github :
 
 https://github.com/austenhughes/E-Commerce-BackEnd
